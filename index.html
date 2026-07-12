@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="view-transition" content="same-origin" />
   <title>Carlos Wimmer</title>
+  <link rel="preconnect" href="https://fonts.cdnfonts.com" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ica-rubrik-black" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/poppins" />
+  <link rel="preload" href="assets/BlueBoy.webp" as="image" type="image/webp" />
+  <link rel="preload" href="assets/BlueHaffer.jpg" as="image" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -14,32 +19,50 @@
     <div class="slider" style="--quantity: 6">
       <div class="item" style="--position: 1">
         <a href="view/catalog-widget.html">
-          <img src="assets/catalog-widget.jpg" alt="Catalog Widget" />
+          <picture>
+            <source srcset="assets/thumbs/catalog-widget.webp" type="image/webp" />
+            <img src="assets/catalog-widget.jpg" alt="Catalog Widget" width="250" height="180" />
+          </picture>
         </a>
       </div>
       <div class="item" style="--position: 2">
         <a href="view/product-widget.html">
-          <img src="assets/product-widget.jpg" alt="Product Widget" />
+          <picture>
+            <source srcset="assets/thumbs/product-widget.webp" type="image/webp" />
+            <img src="assets/product-widget.jpg" alt="Product Widget" width="250" height="180" />
+          </picture>
         </a>
       </div>
       <div class="item" style="--position: 3">
         <a href="view/button-widget.html">
-          <img src="assets/button-widget.jpg" alt="Button Widget" />
+          <picture>
+            <source srcset="assets/thumbs/button-widget.webp" type="image/webp" />
+            <img src="assets/button-widget.jpg" alt="Button Widget" width="250" height="180" />
+          </picture>
         </a>
       </div>
       <div class="item" style="--position: 4">
         <a href="view/controle-mensal.html">
-          <img src="assets/controle-mensal.jpg" alt="Controle Mensal" />
+          <picture>
+            <source srcset="assets/thumbs/controle-mensal.webp" type="image/webp" />
+            <img src="assets/controle-mensal.jpg" alt="Controle Mensal" width="250" height="180" />
+          </picture>
         </a>
       </div>
       <div class="item" style="--position: 5">
         <a href="https://www.linkedin.com/in/carloswimmer/" target="_blank">
-          <img src="assets/linkedin.jpg" alt="LinkedIn" />
+          <picture>
+            <source srcset="assets/thumbs/linkedin.webp" type="image/webp" />
+            <img src="assets/linkedin.jpg" alt="LinkedIn" width="250" height="180" />
+          </picture>
         </a>
       </div>
       <div class="item" style="--position: 6">
         <a href="https://github.com/carloswimmer" target="_blank">
-          <img src="assets/github.jpg" alt="Github" />
+          <picture>
+            <source srcset="assets/thumbs/github.webp" type="image/webp" />
+            <img src="assets/github.jpg" alt="Github" width="250" height="180" />
+          </picture>
         </a>
       </div>
     </div>

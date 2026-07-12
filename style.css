@@ -117,10 +117,10 @@
   transform: translateX(-50%);
   width: min(1600px, 100vw);
   height: max-content;
-  /* padding-bottom: 20px; */
   display: flex;
+  gap: 24px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 

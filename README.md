@@ -1,9 +1,5 @@
 # Portfolio — Carlos Wimmer
 
-A **personal portfolio** site built with **pure HTML and CSS**. A rotating 3D carousel on the home page showcases selected projects, with links to LinkedIn and GitHub.
-
-There is **no JavaScript** in this application. All motion comes from **CSS animations and transitions**, including the carousel rotation and cross-document **View Transitions** when navigating between the home page and project detail views.
-
 [**View live on GitHub Pages →**](https://carloswimmer.github.io/portfolio/)
 
 ![Portfolio — live preview](assets/docs/image/screenshot.jpg)
@@ -14,6 +10,10 @@ There is **no JavaScript** in this application. All motion comes from **CSS anim
   <a href="https://developer.mozilla.org/docs/Web/HTML"><img src="https://img.shields.io/badge/HTML-5-e34f26?style=flat-square&logo=html5&logoColor=white" alt="HTML"></a>
   <a href="https://developer.mozilla.org/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS-3-1572b6?style=flat-square&logo=css3&logoColor=white" alt="CSS"></a>
 </p>
+
+A **personal portfolio** site built with **pure HTML and CSS**. A rotating 3D carousel on the home page showcases selected projects, with links to LinkedIn and GitHub.
+
+There is **no JavaScript** in this application. All motion comes from **CSS animations and transitions**, including the carousel rotation and cross-document **View Transitions** when navigating between the home page and project detail views.
 
 ## Purpose
 

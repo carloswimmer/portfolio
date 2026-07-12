@@ -7,7 +7,7 @@
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 300ms;
+  animation-duration: 500ms;
   animation-timing-function: ease-in-out;
 }
 
@@ -18,82 +18,35 @@
   }
 }
 
-.gallery .images a:nth-child(1) img {
-  view-transition-name: gallery-1;
+.banner .slider .item:nth-child(1) img {
+  view-transition-name: catalog-widget;
 }
-.gallery .images a:nth-child(2) img {
-  view-transition-name: gallery-2;
+.banner .slider .item:nth-child(2) img {
+  view-transition-name: product-widget;
 }
-.gallery .images a:nth-child(3) img {
-  view-transition-name: gallery-3;
+.banner .slider .item:nth-child(3) img {
+  view-transition-name: button-widget;
 }
-.gallery .images a:nth-child(4) img {
-  view-transition-name: gallery-4;
-}
-.gallery .images a:nth-child(5) img {
-  view-transition-name: gallery-5;
-}
-.gallery .images a:nth-child(6) img {
-  view-transition-name: gallery-6;
-}
-.gallery .images a:nth-child(7) img {
-  view-transition-name: gallery-7;
-}
-.gallery .images a:nth-child(8) img {
-  view-transition-name: gallery-8;
-}
-.gallery .images a:nth-child(9) img {
-  view-transition-name: gallery-9;
-}
-.gallery .images a:nth-child(10) img {
-  view-transition-name: gallery-10;
-}
-.gallery .images a:nth-child(11) img {
-  view-transition-name: gallery-11;
-}
-.gallery .images a:nth-child(12) img {
-  view-transition-name: gallery-12;
+.banner .slider .item:nth-child(4) img {
+  view-transition-name: controle-mensal;
 }
 
-.viewer-page--1 .viewer__img {
-  view-transition-name: gallery-1;
+.viewer-page--catalog-widget .viewer__img {
+  view-transition-name: catalog-widget;
 }
-.viewer-page--2 .viewer__img {
-  view-transition-name: gallery-2;
+.viewer-page--product-widget .viewer__img {
+  view-transition-name: product-widget;
 }
-.viewer-page--3 .viewer__img {
-  view-transition-name: gallery-3;
+.viewer-page--button-widget .viewer__img {
+  view-transition-name: button-widget;
 }
-.viewer-page--4 .viewer__img {
-  view-transition-name: gallery-4;
-}
-.viewer-page--5 .viewer__img {
-  view-transition-name: gallery-5;
-}
-.viewer-page--6 .viewer__img {
-  view-transition-name: gallery-6;
-}
-.viewer-page--7 .viewer__img {
-  view-transition-name: gallery-7;
-}
-.viewer-page--8 .viewer__img {
-  view-transition-name: gallery-8;
-}
-.viewer-page--9 .viewer__img {
-  view-transition-name: gallery-9;
-}
-.viewer-page--10 .viewer__img {
-  view-transition-name: gallery-10;
-}
-.viewer-page--11 .viewer__img {
-  view-transition-name: gallery-11;
-}
-.viewer-page--12 .viewer__img {
-  view-transition-name: gallery-12;
+.viewer-page--controle-mensal .viewer__img {
+  view-transition-name: controle-mensal;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .gallery .images img,
+  .banner .slider .item img,
   .viewer__img {
     view-transition-name: none !important;
   }
@@ -225,49 +178,6 @@
   }
 }
 
-.gallery {
-  width: calc(100% - 64px);
-  height: 100vh;
-  max-width: 1800px;
-  margin: 0 auto;
-}
-
-.gallery .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.gallery .title h1 {
-  font-family: "ICA Rubrik";
-  font-size: 3.5em;
-  color: #535d5e;
-  margin-bottom: 32px;
-  -webkit-text-stroke: 2px #d2d2d2;
-}
-
-.gallery .title img {
-  height: 3.75em;
-  opacity: 0.75;
-}
-
-.gallery .images {
-  columns: 300px;
-}
-
-.gallery .images img {
-  width: 100%;
-  border-radius: 16px;
-  margin-bottom: 16px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.gallery .images img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-.gallery a:focus-visible,
 .viewer__back:focus-visible {
   outline: 2px solid #e9f1f2;
   outline-offset: 3px;
@@ -275,8 +185,7 @@
 }
 
 .viewer-page {
-  background: linear-gradient(135deg, #232018, #231c16);
-  background-attachment: fixed;
+  background: #161e23;
   margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
@@ -321,11 +230,16 @@
   min-height: 0;
 }
 
+.viewer__go-to-page {
+  display: flex;
+  text-decoration: none;
+}
+
 .viewer__img {
   max-width: 100%;
   max-height: min(85vh, calc(100dvh - 120px));
   width: auto;
   height: auto;
-  object-fit: contain;
-  border-radius: 16px;
+  object-fit: cover;
+  border-radius: 24px;
 }

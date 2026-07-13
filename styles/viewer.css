@@ -62,6 +62,7 @@
 .viewer__aside-card-list, 
 .viewer__aside-card-link {
   margin-top: 0;
+  color: #a1b4b6
 }
 
 .viewer__aside-card-list {
@@ -80,7 +81,6 @@
   align-items: flex-start;
   gap: 8px;
   text-decoration: none;
-  color: #bfd7d9;
 }
 
 .viewer__aside-card-link-icon {
@@ -94,7 +94,7 @@
   margin-top: 3px;
 }
 
-.viewer__aside-card-link a:hover {
+a.viewer__aside-card-link:hover {
   text-decoration: underline;
   color: #e9f1f2;
 }

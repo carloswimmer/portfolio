@@ -94,7 +94,7 @@
   margin-top: 3px;
 }
 
-.viewer__aside-card-link:hover {
+.viewer__aside-card-link a:hover {
   text-decoration: underline;
   color: #e9f1f2;
 }

@@ -8,13 +8,50 @@
   <title>Portfolio · Catalog Widget</title>
   <link rel="preconnect" href="https://fonts.cdnfonts.com" />
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/poppins" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ica-rubrik-black" />
   <link rel="stylesheet" href="../styles/transitions.css" />
   <link rel="stylesheet" href="../styles/viewer.css" />
 </head>
 
 <body class="viewer-page viewer-page--catalog-widget">
-  <main class="viewer">
+  <aside class="viewer__aside">
     <a class="viewer__back" href="../" aria-label="Back to home">← Home</a>
+    <div class="viewer__aside-card">
+      <h3 class="viewer__aside-card-title">Problem to solve:</h3>
+      <p class="viewer__aside-card-description">
+        Expose the client’s product catalog on their website using a simple two-line code snippet, allowing end users to
+        browse and select the experiences they want to purchase. This web component must remain isolated from the
+        client’s website while still being customizable to match their brand and design system through the Widget Editor
+        and custom CSS.
+      </p>
+      <h3 class="viewer__aside-card-title">Technologies:</h3>
+      <ul class="viewer__aside-card-list">
+        <li>Typescript</li>
+        <li>React</li>
+        <li>Web Component</li>
+        <li>Shadow DOM</li>
+        <li>Material UI</li>
+        <li>Custom lib of components</li>
+        <li>Translation with i18n</li>
+        <li>Datadog RUM</li>
+        <li>GTM + GA4</li>
+        <li>Vitest</li>
+        <li>Storybook</li>
+        <li>Playwright</li>
+        <li>GitLab CI/CD</li>
+        <li>Consumes BFF API in NestJS</li>
+        <li>Consumes Microservice API in NestJS</li>
+      </ul>
+      <h3 class="viewer__aside-card-title">Repository:</h3>
+      <p class="viewer__aside-card-link">
+        <span class="viewer__aside-card-link-icon" aria-hidden="true"></span>
+        private repository
+      </p>
+      </a>
+    </div>
+  </aside>
+  <main class="viewer">
+    <h1 class="viewer__title">Catalog Widget</h1>
     <figure class="viewer__figure">
       <a href="https://vespasidecartour.com/booknow/" target="_blank" class="viewer__go-to-page">
         <img class="viewer__img" src="../assets/catalog-widget.webp" alt="Catalog Widget" />

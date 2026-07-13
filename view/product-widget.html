@@ -8,13 +8,50 @@
   <title>Portfolio · Product Widget</title>
   <link rel="preconnect" href="https://fonts.cdnfonts.com" />
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/poppins" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ica-rubrik-black" />
   <link rel="stylesheet" href="../styles/transitions.css" />
   <link rel="stylesheet" href="../styles/viewer.css" />
 </head>
 
 <body class="viewer-page viewer-page--product-widget">
-  <main class="viewer">
+  <aside class="viewer__aside">
     <a class="viewer__back" href="../" aria-label="Back to home">← Home</a>
+    <div class="viewer__aside-card">
+      <h3 class="viewer__aside-card-title">Problem to solve:</h3>
+      <p class="viewer__aside-card-description">
+        Show the client’s product details on their website using a simple two-line code snippet, allowing end users to
+        learn more and purchase the chosen experience using the embedded Booking Widget. This web component must
+        remain isolated from the
+        client’s website while still being customizable to match their brand and design system through the Widget Editor
+        and custom CSS.
+      </p>
+      <h3 class="viewer__aside-card-title">Technologies:</h3>
+      <ul class="viewer__aside-card-list">
+        <li>Typescript</li>
+        <li>React</li>
+        <li>Web Component</li>
+        <li>Shadow DOM</li>
+        <li>Material UI</li>
+        <li>Custom lib of components</li>
+        <li>Translation with i18n</li>
+        <li>Datadog RUM</li>
+        <li>GTM + GA4</li>
+        <li>Vitest</li>
+        <li>Storybook</li>
+        <li>Playwright</li>
+        <li>GitLab CI/CD</li>
+        <li>Consumes BFF API in NestJS</li>
+        <li>Consumes Microservice API in NestJS</li>
+      </ul>
+      <h3 class="viewer__aside-card-title">Repository:</h3>
+      <p class="viewer__aside-card-link">
+        <span class="viewer__aside-card-link-icon" aria-hidden="true"></span>
+        private repository
+      </p>
+    </div>
+  </aside>
+  <main class="viewer">
+    <h1 class="viewer__title">Product Widget</h1>
     <figure class="viewer__figure">
       <a href="https://tickets.catacombedinapoli.it/?rwstep=product&re-product-id=99072" target="_blank"
         class="viewer__go-to-page">

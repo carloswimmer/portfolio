@@ -1,0 +1,118 @@
+.viewer-page {
+  box-sizing: border-box;
+  display: flex;
+  background: #161e23;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: max(24px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right))
+    max(24px, env(safe-area-inset-bottom)) max(24px, env(safe-area-inset-left));
+}
+
+.viewer__back {
+  align-self: flex-start;
+  padding-left: 20px;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #bfd7d9;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.viewer__back:hover {
+  color: #e9f1f2;
+}
+
+.viewer__back:focus-visible {
+  outline: 2px solid #e9f1f2;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.viewer__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+  height: calc(100vh - 116px);
+  height: calc(100dvh - 116px);
+  width: 420px;
+  color: #bfd7d9;
+  font-family: "Poppins", system-ui, sans-serif;
+  margin-right: 48px;
+}
+
+.viewer__aside-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  border: 1px solid #546566;
+  border-radius: 24px;
+  padding: 20px;
+}
+
+.viewer__aside-card-title {
+  margin: 0;
+}
+
+.viewer__aside-card-description, 
+.viewer__aside-card-list, 
+.viewer__aside-card-link {
+  margin-top: 0;
+}
+
+.viewer__aside-card-link {
+  text-decoration: none;
+  color: #bfd7d9;
+}
+
+.viewer__aside-card-link:hover {
+  text-decoration: underline;
+  color: #e9f1f2;
+}
+
+.viewer {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+  height: calc(100dvh - 64px);
+  max-width: min(1800px, 100%);
+  margin: 0 auto;
+}
+
+.viewer__title {
+  margin: 40px 24px 64px;
+  font-family: "ICA Rubrik", system-ui, sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+  color: #535d5e;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-text-stroke: 1px #d2d2d2;
+}
+
+.viewer__figure {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.viewer__go-to-page {
+  display: flex;
+  text-decoration: none;
+}
+
+.viewer__img {
+  max-width: 100%;
+  max-height: min(85vh, calc(100dvh - 120px));
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 24px;
+}

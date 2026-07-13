@@ -6,12 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="view-transition" content="same-origin" />
   <title>Portfolio · Controle Mensal</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.cdnfonts.com" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/poppins" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ica-rubrik-black" />
+  <link rel="stylesheet" href="../styles/transitions.css" />
+  <link rel="stylesheet" href="../styles/viewer.css" />
 </head>
 
 <body class="viewer-page viewer-page--controle-mensal">
-  <main class="viewer">
+  <aside class="viewer__aside">
     <a class="viewer__back" href="../" aria-label="Back to home">← Home</a>
+    <div class="viewer__aside-card">
+      <h3 class="viewer__aside-card-title">Problem to solve:</h3>
+      <p class="viewer__aside-card-description">
+        Keep the track of my monthly expenses compared to my income and investments.
+      </p>
+      <h3 class="viewer__aside-card-title">Technologies:</h3>
+      <ul class="viewer__aside-card-list">
+        <li>Typescript</li>
+        <li>React</li>
+        <li>Material UI</li>
+        <li>Glassmorphism + dark mode</li>
+        <li>Formik + Yup</li>
+        <li>Firebase Auth + Firestore + Hosting</li>
+        <li>Jest + React Testing Library</li>
+        <li>ESLint + Prettier</li>
+      </ul>
+      <h3 class="viewer__aside-card-title">Repository:</h3>
+      <a class="viewer__aside-card-link" href="https://github.com/carloswimmer/controle-mensal" target="_blank">
+        github.com/carloswimmer/controle-mensal
+      </a>
+    </div>
+  </aside>
+  <main class="viewer">
+    <h1 class="viewer__title">Controle Mensal</h1>
     <figure class="viewer__figure">
       <a href="https://controle-mensal.web.app/" target="_blank" class="viewer__go-to-page">
         <img class="viewer__img" src="../assets/controle-mensal.webp" alt="Controle Mensal" />

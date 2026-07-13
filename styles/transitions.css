@@ -1,0 +1,49 @@
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.01ms !important;
+  }
+}
+
+.banner .slider .item:nth-child(1) img {
+  view-transition-name: catalog-widget;
+}
+.banner .slider .item:nth-child(2) img {
+  view-transition-name: product-widget;
+}
+.banner .slider .item:nth-child(3) img {
+  view-transition-name: button-widget;
+}
+.banner .slider .item:nth-child(4) img {
+  view-transition-name: controle-mensal;
+}
+
+.viewer-page--catalog-widget .viewer__img {
+  view-transition-name: catalog-widget;
+}
+.viewer-page--product-widget .viewer__img {
+  view-transition-name: product-widget;
+}
+.viewer-page--button-widget .viewer__img {
+  view-transition-name: button-widget;
+}
+.viewer-page--controle-mensal .viewer__img {
+  view-transition-name: controle-mensal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner .slider .item img,
+  .viewer__img {
+    view-transition-name: none !important;
+  }
+}

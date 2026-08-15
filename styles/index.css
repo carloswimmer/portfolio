@@ -61,11 +61,11 @@
 
 .banner .content {
   position: absolute;
-  bottom: -100px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: min(1600px, 100vw);
-  height: max-content;
+  height: 42%;
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
@@ -79,6 +79,7 @@
   line-height: 1em;
   color: #535d5e;
   position: relative;
+  margin: 0;
 }
 
 .banner .content h1::after {
@@ -112,13 +113,12 @@
 .banner .content .model {
   background-image: url(../assets/BlueBoy.webp);
   width: 100%;
-  height: 95vh;
+  height: 88vh;
   position: absolute;
   bottom: 0;
-  left: 0;
-  background-size: auto 90%;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
 }
 
 @keyframes autoRun {

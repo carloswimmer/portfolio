@@ -26,8 +26,8 @@
 
 .banner .slider {
   position: absolute;
-  width: 250px;
-  height: 180px;
+  width: min(250px, 30vw);
+  height: min(180px, 22vw);
   top: 10%;
   left: calc(50% - 100px);
   transform-style: preserve-3d;
@@ -37,12 +37,13 @@
 }
 
 .banner .slider .item {
+  --diameter: min(600px, 30.5vw);
   position: absolute;
   inset: 0 0 0 0;
   transform: rotateY(
       calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
     )
-    translateZ(min(600px, 30.5vw));
+    translateZ(var(--diameter));
 }
 
 .banner .slider .item picture {
@@ -92,22 +93,40 @@
 }
 
 .banner .content .author {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   font-family: "Poppins";
   text-align: right;
+  width: min-content;
   max-width: 300px;
   color: #323a3b;
+  z-index: 2;
 }
 
-.banner .content .author h2 {
+.banner .content .author-citation {
+  margin-block: 0;
+}
+
+.banner .content .author-citation-mobile {
+  display: none;
+}
+
+.banner .content .author-name-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .content .author-name-title h2 {
   font-size: 3em;
   line-height: 0.9em;
+  margin-top: 4px;
   margin-bottom: 0;
-  margin-top: 0.4em;
 }
 
-.banner .content .author p:first-of-type {
+.banner .content .author-name-title p {
   font-weight: 700;
-  margin-top: 0;
+  margin-block: 0;
 }
 
 .banner .content .model {
@@ -119,6 +138,66 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 1280px) {
+  .banner .content {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+
+  .banner .content h1 {
+    line-height: 0.6em;
+  }
+
+  .banner .content .author {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+    width: stretch;
+    margin-bottom: 24px;
+  }
+
+  .banner .content .author h2 {
+    font-size: 2em;
+  }
+
+  .banner .content .author-citation {
+    display: none;
+  }
+
+  .banner .content .author-citation-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-block: 0;
+  }
+}
+
+@media (max-width: 1048px) {
+  .banner .slider .item {
+    --diameter: max(30.5vw, 320px);
+  }
+
+  .banner .content h1 {
+    font-size: 24.5vw;
+  }
+
+  .banner .content .author {
+    gap: 218px;
+  }
+
+  .banner .content .model {
+    background-image: linear-gradient(
+      160deg, 
+      transparent 75%, 
+      #ee8018dd 88%,
+      #ee8018 100%
+    ), 
+    url(../assets/BlueBoy.webp);
+  }
 }
 
 @keyframes autoRun {

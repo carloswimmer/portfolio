@@ -156,7 +156,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: none;
-    width: stretch;
+    width: 100%;
     margin-bottom: 24px;
   }
 

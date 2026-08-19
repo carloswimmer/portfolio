@@ -211,6 +211,7 @@
 
   .banner .content .author {
     justify-content: flex-end;
+    gap: unset;
   }
 
   .banner .content .author h2 {

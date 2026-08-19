@@ -178,7 +178,7 @@
 
 @media (max-width: 1048px) {
   .banner .slider .item {
-    --diameter: max(30.5vw, 320px);
+    --diameter: 320px;
   }
 
   .banner .content h1 {
@@ -197,6 +197,28 @@
       #ee8018 100%
     ), 
     url(../assets/BlueBoy.webp);
+  }
+}
+
+@media (max-width: 696px) {
+  .banner .slider .item {
+    --diameter: min(58vw, 320px);
+  }
+
+  .banner .content {
+    gap: 16px;
+  }
+
+  .banner .content .author {
+    justify-content: flex-end;
+  }
+
+  .banner .content .author h2 {
+    font-size: 1.6em;
+  }
+  
+  .banner .content .author-citation-mobile {
+    display: none;
   }
 }
 
